@@ -1,4 +1,4 @@
-package algoritma_sınıf;
+package cihangaspak_java;
 
 import java.util.Scanner;
 
