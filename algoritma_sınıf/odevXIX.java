@@ -94,7 +94,10 @@ public class odevXIX{
         System.out.println(charA<charB); //true
         System.out.println('h'<'Z'); //false
 
-        //sayfa 34de kaldık
+        //Character sınıfına ait char metodları
+        System.out.println(Character.isDigit('A'));  //sayı olmadığı için false
+        System.out.println(Character.isLetter('p')); //sözcük oldugu için true 
+        //sayfa 34de kaldık:)
 
     }
 }
