@@ -88,7 +88,13 @@ public class odevXIX{
         byte b = (byte)'\uFFF4';
         System.out.println(b); //-12
 
+        //char nesnelerini karşılaştırabiliriz
+        char charA= 'A';
+        char charB= 'B';
+        System.out.println(charA<charB); //true
+        System.out.println('h'<'Z'); //false
 
+        //sayfa 34de kaldık
 
     }
 }
