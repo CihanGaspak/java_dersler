@@ -1,5 +1,9 @@
 package algoritma_sınıf;
 
+import java.util.Scanner;
+
+import javax.swing.InputMap;
+
 public class odevXIX{
     public static void main(String[]args) {
         //Math Yuvarlama fonksiyonları
@@ -93,11 +97,47 @@ public class odevXIX{
         char charB= 'B';
         System.out.println(charA<charB); //true
         System.out.println('h'<'Z'); //false
+        System.out.println("**************");
 
         //Character sınıfına ait char metodları
-        System.out.println(Character.isDigit('A'));  //sayı olmadığı için false
-        System.out.println(Character.isLetter('p')); //sözcük oldugu için true 
-        //sayfa 34de kaldık:)
+        System.out.println(Character.isLetter('p')); //sözcük oldugunu kontrol eder
+        System.out.println(Character.isDigit('A'));  //sayı oldugunu kontrol 
+        System.out.println(Character.isLetterOrDigit(':')); //sözcük veya sayı oldugunu kontol eder
+        System.out.println(Character.isLowerCase('A'));  //küçük harfse true döndürür 
+        System.out.println(Character.isUpperCase('C'));  //büyük harfse true döndürür
+        System.out.println(Character.toLowerCase('G'));  //küçük karaktere döndürür
+        System.out.println(Character.toUpperCase('z'));  //büyük karaktere döndürür
+        System.out.println("**************");
 
+        //Char için tek tırnak String için çift tırnak kullanılır
+        //char sadece bir tane karakteri temsil eder 'M'
+        //string birden fazla karakteri temsil eder  "MUZAFFER"
+
+        //String için temel metotlar
+        String mesaj= " MUZAFFER muzaffer" ;
+        String mesaj2= "Cihan";
+
+        System.out.println(mesaj.length()); //stringin uzunlugunu verir -> 18
+        System.out.println(mesaj.charAt(7)); // index no 7 olan elemanı getirir ->E
+        System.out.println(mesaj.concat(mesaj2)); //mesajın sonuna mesaj2'yi ekler
+        System.out.println(mesaj2.toUpperCase()); //büyük harfe çevirir
+        System.out.println(mesaj.toLowerCase()); //küçük harfe çevirir
+        System.out.println(mesaj.trim()+"\n"+mesaj); //başındaki ve sonundaki boşlukları siler
+        System.out.println("**************");
+
+        int i = 2;
+        int j =3;
+        System.out.println("i + j = " + i + j);
+        System.out.println("i + j = " + (i + j));
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Klavyeden bir değer giriniz: ");
+        String klavyedenGirildi = input.next();
+
+        System.out.println("Girdiğiniz metnin uzunluğu: "+klavyedenGirildi.length());
+        
+
+        input.close();
     }
 }
