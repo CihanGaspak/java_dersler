@@ -2,8 +2,6 @@ package algoritma_sınıf;
 
 import java.util.Scanner;
 
-import javax.swing.InputMap;
-
 public class odevXIX{
     public static void main(String[]args) {
         //Math Yuvarlama fonksiyonları
