@@ -8,10 +8,17 @@ public class algo_slayt11_ornek {
         }
 
         //10.000 adet mesaj yazan uygulama while ile
-        int i = 1;
-        while (i<=10000){
-            System.out.println("Merhaba "+i+".kez");
-            i++;
+        int sayac = 1;
+        while (sayac<=10000){
+            System.out.println("Merhaba "+sayac+".kez");
+            sayac++;
+        }
+
+        for(int i =1; i<=10; i++){
+            if(i%2==1) 
+            System.out.println("Merhaba -"+i);
+            else
+            System.out.println("Cok calismaliyiz cokk -"+i);
         }
     }
 }
