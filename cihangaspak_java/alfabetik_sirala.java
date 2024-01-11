@@ -24,6 +24,7 @@ public class alfabetik_sirala {
         else {
             System.out.println(sehir2+", "+sehir1+"'den önce gelir.");
         }
+        System.out.println(sehir1.compareTo(sehir2));
     input.close();
     }
 }
