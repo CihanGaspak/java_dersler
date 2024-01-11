@@ -42,7 +42,7 @@ public class algo_slayt11_ornek {
 
             System.out.println(mesaj+" "+i);            
         }*/
-        ArrayList<String> ad_soyad = new ArrayList<>();
+        /*ArrayList<String> ad_soyad = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("ad_soyad.txt"))) {
             String line;
             int arananIndex;
@@ -66,5 +66,33 @@ public class algo_slayt11_ornek {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
+
+        ArrayList<String> duzenlenmisIsimler = new ArrayList<>();
+
+        // Dosyadan okuma işlemi
+        try (BufferedReader reader = new BufferedReader(new FileReader("ad_soyad.txt"))) {
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                // Satır başı ve sonundaki boşlukları kaldır ve birden fazla boşluğu tek boşlukla değiştir
+                line = line.trim().replaceAll("\\s+", " ");
+                // Tüm isimleri büyük harfe çevir ve "SAYIN" ile başlat
+                duzenlenmisIsimler.add("SAYIN " + line.toUpperCase());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Dosyaya yazma işlemi
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("SN_ISIMLER.txt"))) {
+            for (String isim : duzenlenmisIsimler) {
+                writer.write(isim);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
