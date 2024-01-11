@@ -7,6 +7,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.sound.sampled.SourceDataLine;
 
 public class algo_slayt11_ornek {
     public static void main(String[] args) {
@@ -68,7 +71,7 @@ public class algo_slayt11_ornek {
         }
         */
 
-        ArrayList<String> duzenlenmisIsimler = new ArrayList<>();
+        /*ArrayList<String> duzenlenmisIsimler = new ArrayList<>();
 
         // Dosyadan okuma işlemi
         try (BufferedReader reader = new BufferedReader(new FileReader("ad_soyad.txt"))) {
@@ -93,6 +96,18 @@ public class algo_slayt11_ornek {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
+
+        int sayi1 = (int) (Math.random()*10);
+        int sayi2 = (int) (Math.random()*10);
+        int sonuc;
+
+        Scanner input = new Scanner(System.in);
+        do {
+            System.out.print(sayi1 +" + "+ sayi2 +" sonuc nedir? : ");
+            sonuc = input.nextInt();
+        } while (sonuc != sayi1+sayi2);
+        System.out.println("tebrikler!");
 
     }
 }
