@@ -98,7 +98,8 @@ public class algo_slayt11_ornek {
         }
         */
 
-        int sayi1 = (int) (Math.random()*10);
+        //sayı toplama
+        /*int sayi1 = (int) (Math.random()*10);
         int sayi2 = (int) (Math.random()*10);
         int sonuc;
 
@@ -107,7 +108,27 @@ public class algo_slayt11_ornek {
             System.out.print(sayi1 +" + "+ sayi2 +" sonuc nedir? : ");
             sonuc = input.nextInt();
         } while (sonuc != sayi1+sayi2);
+        System.out.println("tebrikler!");*/
+
+        //sayı tahmin
+        int sayi = (int) (Math.random()*101);
+        int sonuc;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("0 ile 100 arasindaki sayiyi tahmin edin: ");
+            sonuc = input.nextInt();
+
+        do {
+            if(sayi>sonuc) 
+            System.out.print("küçük ");
+            else if(sayi<sonuc) 
+            System.out.print("büyük ");
+            System.out.print("tekrar deneyin: ");
+            sonuc = input.nextInt();
+        } while (sonuc != sayi);
         System.out.println("tebrikler!");
+
 
     }
 }
