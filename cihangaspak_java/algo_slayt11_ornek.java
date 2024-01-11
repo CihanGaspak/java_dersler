@@ -111,7 +111,7 @@ public class algo_slayt11_ornek {
         System.out.println("tebrikler!");*/
 
         //sayı tahmin
-        int sayi = (int) (Math.random()*101);
+        /*int sayi = (int) (Math.random()*101);
         int sonuc;
 
         Scanner input = new Scanner(System.in);
@@ -127,8 +127,44 @@ public class algo_slayt11_ornek {
             System.out.print("tekrar deneyin: ");
             sonuc = input.nextInt();
         } while (sonuc != sayi);
-        System.out.println("tebrikler!");
+        System.out.println("tebrikler!"); */
+        
+        //en buyugu bul 
+        
+        /*Scanner input = new Scanner(System.in);
+        int max, number;
+        number = input.nextInt();
+        max = number;
 
+        while(0!=number){
+            number = input.nextInt();
+            if(max < number) {
+                max = number;
+            }
+        }
+        System.out.println("max: "+max);
+        System.out.println("number: "+ number);*/
+        
+        
+        //ÇARPIM TABLOSU YAZDIR
+        
+        //baslık
+        System.out.println("                    Carpim Tablosu");
+        //sayı baslıgı
+        System.out.print("    ");
+        for(int i =1; i<=9; i++){
+            System.out.print("   "+i);
+        }
+        System.out.println("\n----------------------------------------");
+        
+        // satırları yazdır
+        for(int i =1; i<=9; i++){
+            System.out.print(i+" | ");
+            for(int j =1;j<=9; j++){
+                System.out.printf("%4d",i*j);
+            }
+            System.out.println();
+        }
 
     }
 }
