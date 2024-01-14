@@ -45,7 +45,7 @@ public class ymh22final {
             System.out.printf("a+b:000%-5d", a+b); //0001 */
             
             //Fibonacci List sorusu
-            Scanner input =new Scanner(System.in);
+            /*Scanner input =new Scanner(System.in);
             System.out.print("Fibonacci Dizisi Kaç Elemanli Olsun?: ");
             int n = input.nextInt();
             int[] sayilar = new int[n];
@@ -59,6 +59,25 @@ public class ymh22final {
             System.out.print(n+" elemanli fibonacci dizisi: ");
             for(int i=0; i<sayilar.length;i++){
                 System.out.print(sayilar[i]+" ");
+            }*/
+
+            double sira[] = {0.1, 1.2, 2.3, 3.4, 4.5, 5.6, 6.7, 7.8, 8.9, 9.0};
+            double sayi1;
+            double sayi2; 
+
+            for(int i=0; i<sira.length; i++){
+                for(int j=i+1; j<sira.length; j++){
+                    if(sira[i]< sira[j]){
+                        sayi1 = sira[i];
+                        sayi2 = sira[j];
+                        sira[i]= sayi2;
+                        sira[j]= sayi1;
+                    }
+                }
+            }
+
+            for(int i=0;i<sira.length;i++){
+                System.out.print(sira[i]+" ");
             }
     }
 }
