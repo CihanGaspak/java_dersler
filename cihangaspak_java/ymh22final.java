@@ -61,7 +61,7 @@ public class ymh22final {
                 System.out.print(sayilar[i]+" ");
             }*/
 
-            double sira[] = {0.1, 1.2, 2.3, 3.4, 4.5, 5.6, 6.7, 7.8, 8.9, 9.0};
+            /*double sira[] = {0.1, 1.2, 2.3, 3.4, 4.5, 5.6, 6.7, 7.8, 8.9, 9.0};
             double sayi1;
             double sayi2; 
 
@@ -78,6 +78,34 @@ public class ymh22final {
 
             for(int i=0;i<sira.length;i++){
                 System.out.print(sira[i]+" ");
+            }*/
+
+            
+            Scanner input= new Scanner(System.in);
+            System.out.print("Kaç satir olsun: ");
+            int satir= input.nextInt();
+            System.out.print("Kaç sutun olsun: ");
+            int sutun= input.nextInt();
+
+            System.out.print("!!!!");
+            for(int i=1; i<=sutun; i++){
+                System.out.printf("!!!%d",i);
             }
+            System.out.println();
+
+            System.out.print("----");
+            for(int i=1; i<=sutun; i++){
+                System.out.printf("----");
+            }
+            System.out.println();
+
+            for(int i=1; i<=satir; i++){
+                System.out.printf("%d>**",i);
+                for(int j=1; j<=sutun; j++){
+                    System.out.printf("-%d0%d",i,j);
+                }
+                System.out.println();
+            }
+
     }
 }
