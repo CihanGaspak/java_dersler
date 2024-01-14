@@ -81,7 +81,9 @@ public class ymh22final {
             }*/
 
             
-            Scanner input= new Scanner(System.in);
+
+            //Döngü ile tablo yazdırma
+            /*Scanner input= new Scanner(System.in);
             System.out.print("Kaç satir olsun: ");
             int satir= input.nextInt();
             System.out.print("Kaç sutun olsun: ");
@@ -105,7 +107,18 @@ public class ymh22final {
                     System.out.printf("-%d0%d",i,j);
                 }
                 System.out.println();
-            }
+            }*/
+
+            //Logaritma sorusu
+            Scanner input = new Scanner(System.in);
+            System.out.print("logaritma a tabaninda b olacak sekilde a sayisini girin: ");
+            int a = input.nextInt();
+
+            System.out.print("logaritma a tabaninda b olacak sekilde b sayisini girin: ");
+            int b = input.nextInt();
+
+            double result = Math.log10(b)/Math.log10(a);
+            System.out.println("logaritma "+a+ " tabaninda "+b+" = "+(result));
 
     }
 }
