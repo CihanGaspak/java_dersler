@@ -15,6 +15,7 @@ public class diziler {
         System.out.println("en küçük eleman: "+enKucuk);*/
 
         //kullanıcının girdiği listede en kucugu ve indisini bulan program
+        /* 
         Scanner input = new Scanner(System.in);
         int[] tamSayilar = new int[5];
         int enKucuk;
@@ -40,6 +41,35 @@ public class diziler {
             System.out.print(i+", ");
         }
         System.out.println("\nEn küçük: "+enKucuk);
-        System.out.println("En küçük sayinin indisi: "+enKucukIndis);
+        System.out.println("En küçük sayinin indisi: "+enKucukIndis);*/
+
+        //kullanıcının girdiği listeyi küçükten büyüğe sıralayan program
+        Scanner input = new Scanner(System.in);
+        int[] tamSayilar = new int[5];
+        int degistir=0;
+        
+        int sayac = 0;
+        
+        while(sayac<5){
+            System.out.print((sayac+1) + ". elemani girin: ");
+            tamSayilar[sayac] = input.nextInt();
+            sayac++;
+        }
+
+    
+        for(int i=0; i<4; i++){
+            for(int j=i+1; j<5;j++){
+                if(tamSayilar[i]>tamSayilar[j]){
+                    degistir= tamSayilar[i];
+                    tamSayilar[i] = tamSayilar[j];
+                    tamSayilar[j]= degistir;
+                }
+            }
+        }
+
+        for(int i=0;i<5; i++) {
+            System.out.println(tamSayilar[i]);
+        }
+      
     }
 }
