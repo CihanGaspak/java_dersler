@@ -35,7 +35,13 @@ public class ymh22final {
                 System.out.println("Sen kazandin.");
             }*/
 
-    
+            //Çıktı Sorusu
+            int a= 2222, b=1111; //b=3333;
+            System.out.print("a+b:");
+            System.out.println(a + ++b); //3334
+            System.out.println("a+b:"+ a + b); //22221112
+            b= -a++; //b= -2221
+            System.out.printf("a+b:000%-5d", a+b); //0001 
 
     }
 }
