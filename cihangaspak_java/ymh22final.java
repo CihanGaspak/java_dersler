@@ -1,6 +1,8 @@
 package java_dersler.cihangaspak_java;
-import java.util.Random;
+
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 
 
 public class ymh22final {
@@ -35,13 +37,29 @@ public class ymh22final {
                 System.out.println("Sen kazandin.");
             }*/
 
-            //Çıktı Sorusu
+            /*//Çıktı Sorusu
             int a= 2222, b=1111; //b=3333;
             System.out.print("a+b:");
             System.out.println(a + ++b); //3334
             System.out.println("a+b:"+ a + b); //22221112
             b= -a++; //b= -2221
-            System.out.printf("a+b:000%-5d", a+b); //0001 
+            System.out.printf("a+b:000%-5d", a+b); //0001 */
+            
+            //Fibonacci List sorusu
+            Scanner input =new Scanner(System.in);
+            System.out.print("Fibonacci Dizisi Kaç Elemanli Olsun?: ");
+            int n = input.nextInt();
+            List<Integer> sayilar = new ArrayList<Integer>();
+            sayilar.add(0);
+            sayilar.add(1);
 
+            for(int i=2; i<n; i++){
+                sayilar.add((sayilar.get(i-1)+sayilar.get(i-2)));
+            }
+
+            System.out.print(n+" elemanli fibonacci dizisi: ");
+            for(int i=0; i<sayilar.size();i++){
+                System.out.print(sayilar.get(i)+" ");
+            }
     }
 }
