@@ -110,7 +110,7 @@ public class ymh22final {
             }*/
 
             //Logaritma sorusu
-            Scanner input = new Scanner(System.in);
+            /*Scanner input = new Scanner(System.in);
             System.out.print("logaritma a tabaninda b olacak sekilde a sayisini girin: ");
             int a = input.nextInt();
 
@@ -118,7 +118,7 @@ public class ymh22final {
             int b = input.nextInt();
 
             double result = Math.log10(b)/Math.log10(a);
-            System.out.println("logaritma "+a+ " tabaninda "+b+" = "+(result));
+            System.out.println("logaritma "+a+ " tabaninda "+b+" = "+(result));*/
 
     }
 }
