@@ -47,7 +47,7 @@ public class ymh22but {
         */
 
         //Soru 4 
-        int[] sayilar = {5,1,4,2,3,88,9};
+        /*int[] sayilar = {5,1,4,2,3,88,9};
         int enkInd, n = sayilar.length;
         int enk, temp;
 
@@ -67,7 +67,18 @@ public class ymh22but {
 
         for(int i=0; i<sayilar.length; i++){
             System.out.print(sayilar[i]+ " ");
-        }
+        }*/
+
+        //Soru 5 
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Boslukla ayrilmis 3 kelimelik bir cumle yaziniz: ");
+        String str1 = giris.next();
+        String str2 = giris.next();
+        String str3 = giris.next();
+        System.out.println("str: " + str1.substring(2));
+        System.out.println(str2 + "." + str3 + "." + str1.substring(2));
+
+        //çıktısı nedir
 
     }
 }
