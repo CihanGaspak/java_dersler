@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class ymh22but {
     public static void main(String[] args) {
-        final String passwd = "Yazilim2022";
+        //Soru 1
+        /*final String passwd = "Yazilim2022";
         String girilenSifre;
         int sayac =0;
 
@@ -27,6 +28,22 @@ public class ymh22but {
                     break;
                 }
             }
-        }
+        }*/
+
+        //Soru 3 
+        char a = '0', b = '1';
+        int c = (int)b, d = (int)a;
+        System.out.println(a + ":" + c);
+        System.out.println(b + ":" + d);
+        System.out.print((char)d + ":"+ a + "--");
+        System.out.println((char)c + ":" + b);
+        System.out.println(a + "--" + b);
+        //çıktısı nedir?
+        
+        //0:49
+        //1:48
+        //0:0--1:1
+        //0--1
+
     }
 }
